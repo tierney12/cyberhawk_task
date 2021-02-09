@@ -1,5 +1,8 @@
+<html>
+<head>
 <body>
 
+<!--Simple text field and button that loads the contents of the logic into the text fiedl when clicked-->
 
 <div id="dtext">
   <h2>Click to retrieve the lastest update from the wind turbine inspection. </h2>
@@ -9,8 +12,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script>
+<!--Contains the logic that implements a solution to the problem statement, and passes back HTML into the webpage for display-->
 function loadResults() {
-    var content = <?php
+    var content = "<?php
     
             $string = "";
 					
@@ -29,14 +33,13 @@ function loadResults() {
 			
 			echo "{$string}";
 
-	?>;
+	?>";
 		
    $("#dtext").html(content);
 }
 
 </script>
 
-
-
 </body>
+</head?
 </html>
